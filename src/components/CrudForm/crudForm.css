@@ -1,0 +1,25 @@
+.title_form {
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+}
+.slider-parent {
+  position: relative;
+  display: flex;
+}
+
+.buble {
+  position: absolute;
+  top: -25px;
+  margin-left: 40px;
+}
+
+.buble-defense {
+  position: absolute;
+  top: -25px;
+  margin-left: 40px;
+}
+.slider-parent input {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

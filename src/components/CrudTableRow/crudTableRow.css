@@ -1,0 +1,27 @@
+.table td.text-center {
+  text-align: center;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important;
+}
+
+.row-icons-actions {
+  width: 70%;
+  margin: auto;
+}
+
+.row-icons-actions svg {
+  cursor: pointer;
+}
+
+.row-icons-actions button {
+  background-color: #ffffff;
+  border: none;
+  transition: all 0.3s;
+}
+
+.row-icons-actions button:hover {
+  transform: scale(1.2);
+}
