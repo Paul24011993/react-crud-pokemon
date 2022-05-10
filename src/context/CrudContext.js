@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-const CrudContext = createContext();
+const CrudContext = createContext("");
 
 const CrudProvider = ({ children }) => {
 
@@ -25,7 +25,7 @@ const CrudProvider = ({ children }) => {
 
     // declare the data fetching function
     const fetchData = async () => {
-        const getData = await fetch(`https://pokemon-pichincha.herokuapp.com/pokemons/?idAuthor=1`)
+        await fetch(`https://pokemon-pichincha.herokuapp.com/pokemons/?idAuthor=1`)
             .then((response) => response.json())
             .then((responseData) => {
                 //console.log(getData)
@@ -46,7 +46,7 @@ const CrudProvider = ({ children }) => {
 
         setDataSearch(e.target.value);
 
-        const getSearch = await fetch(`https://pokemon-pichincha.herokuapp.com/pokemons/?idAuthor=1&name=${e.target.value}`)
+        await fetch(`https://pokemon-pichincha.herokuapp.com/pokemons/?idAuthor=1&name=${e.target.value}`)
             .then((response) => response.json())
             .then((responseData) => {
                 //SetLoadData(true);

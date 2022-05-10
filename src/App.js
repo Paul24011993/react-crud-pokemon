@@ -8,7 +8,7 @@ import CrudBtnNuevo from './components/CrudBtnNuevo/CrudBtnNuevo';
 
 function App() {
 
-    const { pokemons, isShow, handleClick } = useContext(CrudContext);
+    const { pokemons, isShow } = useContext(CrudContext);
 
     return (
 
@@ -22,7 +22,7 @@ function App() {
                 {pokemons && (
                     <CrudTable />
                 )}
-                {isShow ? <CrudForm /> : <></>}
+                {isShow ? <CrudForm /> : ''}
             </div>
         </div>
     );

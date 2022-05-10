@@ -22,6 +22,7 @@ export default function Search() {
 
                     <input
                         type="text"
+                        id="inputSearch"
                         className="form-control"
                         placeholder="Search"
                         value={dataSearch}

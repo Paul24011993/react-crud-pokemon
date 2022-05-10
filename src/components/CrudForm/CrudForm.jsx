@@ -58,7 +58,6 @@ const CrudForm = () => {
         if (form.id === null) {
             createData(form);
         } else {
-            console.log(form);
             updateData(form);
         }
 
@@ -162,7 +161,6 @@ const CrudForm = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 12 12">
                                         <path id="iconmonstr-save-3" d="M7.5,1.5H9V4H7.5ZM12,2V12H0V0H10ZM2.5,4.5h7V1h-7Zm8,2h-9V11h9Zm-1,1h-7V8h7Zm0,1h-7V9h7Zm0,1h-7V10h7Z" fill="#fff" />
                                     </svg>
-
                                     {dataToEdit ? "Actualizar" : "Guardar"}
                                 </button>
                                 <button
@@ -174,7 +172,6 @@ const CrudForm = () => {
                                         <line id="Línea_1" data-name="Línea 1" y1="12" transform="translate(9.385 0.92) rotate(49)" fill="none" stroke="#fff" strokeWidth="2" />
                                         <line id="Línea_2" data-name="Línea 2" x2="12" transform="translate(0.92 0.328) rotate(49)" fill="none" stroke="#fff" strokeWidth="2" />
                                     </svg>
-
                                     Cancelar
                                 </button>
                             </div>
